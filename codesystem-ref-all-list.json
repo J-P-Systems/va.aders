@@ -1,0 +1,427 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/address-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressType",
+      "title" : "AddressType",
+      "description" : "The type of an address (physical / postal).",
+      "oids" : ["2.16.840.1.113883.4.642.4.70"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-address-type.html" : "AddressType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/address-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressUse",
+      "title" : "AddressUse",
+      "description" : "The use of an address.",
+      "oids" : ["2.16.840.1.113883.4.642.4.68"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-address-use.html" : "AddressUse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "oids" : ["2.16.840.1.113883.4.642.4.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
+    },
+    {
+      "url" : "http://hl7.org/fhir/adverse-event-actuality",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdverseEventActuality",
+      "title" : "AdverseEventActuality",
+      "description" : "Overall nature of the adverse event, e.g. real or potential.",
+      "oids" : ["2.16.840.1.113883.4.642.4.832"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-adverse-event-actuality.html" : "AdverseEventActuality"
+    },
+    {
+      "url" : "http://hl7.org/fhir/bundle-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "BundleType",
+      "title" : "BundleType",
+      "description" : "Indicates the purpose of a bundle - how it is intended to be used.",
+      "oids" : ["2.16.840.1.113883.4.642.4.621"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-bundle-type.html" : "BundleType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/contact-point-system",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointSystem",
+      "title" : "ContactPointSystem",
+      "description" : "Telecommunications form for contact point.",
+      "oids" : ["2.16.840.1.113883.4.642.4.72"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-contact-point-system.html" : "ContactPointSystem"
+    },
+    {
+      "url" : "http://hl7.org/fhir/contact-point-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointUse",
+      "title" : "ContactPointUse",
+      "description" : "Use of contact point.",
+      "oids" : ["2.16.840.1.113883.4.642.4.74"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-contact-point-use.html" : "ContactPointUse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/event-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EventStatus",
+      "title" : "EventStatus",
+      "description" : "Codes identifying the lifecycle stage of an event.",
+      "oids" : ["2.16.840.1.113883.4.642.4.110"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-immunization-status.html" : "Immunization Status Codes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/http-verb",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "HTTPVerb",
+      "title" : "HTTPVerb",
+      "description" : "HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.",
+      "oids" : ["2.16.840.1.113883.4.642.4.625"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-http-verb.html" : "HTTPVerb"
+    },
+    {
+      "url" : "http://hl7.org/fhir/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "oids" : ["2.16.840.1.113883.4.642.4.58"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "oids" : ["2.16.840.1.113883.4.642.4.424"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-link-type.html" : "LinkType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/name-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "NameUse",
+      "title" : "NameUse",
+      "description" : "The use of a human name.",
+      "oids" : ["2.16.840.1.113883.4.642.4.66"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-name-use.html" : "NameUse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/search-entry-mode",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "SearchEntryMode",
+      "title" : "SearchEntryMode",
+      "description" : "Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.",
+      "oids" : ["2.16.840.1.113883.4.642.4.623"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-search-entry-mode.html" : "SearchEntryMode"
+    },
+    {
+      "url" : "http://hl7.org/fhir/sid/cvx",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "CVX",
+      "title" : "Vaccine Administered Code Set (CVX)",
+      "description" : "The CDC's National Center of Immunization and Respiratory Diseases (NCIRD - see [https://www.cdc.gov/ncird/](https://www.cdc.gov/ncird/)) developed and maintains the CVX (vaccine administered) code set. It includes both active and inactive vaccines available in the US. CVX codes for inactive vaccines allow transmission of historical immunization records. When a MVX (manufacturer) code is paired with a CVX (vaccine administered) code, the specific trade named vaccine may be indicated. These codes should be used for immunization messages using either HL7 Version 2.3.1 or HL7 Version 2.5.1. CVX is the underlying Master Code System for V2 table 0292 (Vaccines Administered). The machine readable name for CVX in PHIN VADS is PH_VaccinesAdministeredCVX_CDC_NIP. The version of the CVX code set for certification can be found on the archive page:[https://www2a.cdc.gov/vaccines/iis/iisstandards/mu3versioned_codes.asp](https://www2a.cdc.gov/vaccines/iis/iisstandards/mu3versioned_codes.asp) \r\n\r\nThe Status column indicates if the vaccine is currently available in the United States.\r\n\r\n*  Active: A currently available administrable vaccine \r\n\r\n*  Inactive: An administrable vaccine formulation that is no longer available for patient administration, but can be found in historical patient records OR A historical record of a vaccine administered where the exact formulation is unknown \r\n\r\n*  Pending: A vaccine that is expected to become active in the future \r\n\r\n*  Non-US: A vaccine that available outside the US only \r\n\r\n*  Never Active: A vaccine that was never available and is not in the pipeline of new vaccines \r\n\r\nThe Last Updated column indicates the last time this particular vaccine code was updated in this table.\r\n\r\nQuestions regarding this table should be directed to the IIS Technical Assistance Team via iisinfo@cdc.gov (or use mailing address via [https://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx#addr](https://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx#addr)) \r\n\r\nHL7 Implementers should note that 'Status' IS NOT CONCEPT STATUS as all codes are ACTIVE in this code system.\r\n\r\nThe current code system is available via [https://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx](https://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx)",
+      "oids" : ["2.16.840.1.113883.12.292"],
+      "uses" : {
+      },
+      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1010.6/expansion" : "CVX Vaccines Administered Vaccine Set"
+    },
+    {
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-immunization-target-disease.html" : "Immunization Target Disease Codes",
+      "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-immunization-reason.html" : "Immunization Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-adverse-event-type.html" : "SNOMED CT Clinical Findings"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/adverse-event-category",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "AdverseEventCategory",
+      "title" : "AdverseEventCategory",
+      "description" : "Overall categorization of the event, e.g. product-related or situational.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1251"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-adverse-event-category.html" : "AdverseEventCategory"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "AdverseEventCausalityAssessment",
+      "title" : "AdverseEventCausalityAssessment",
+      "description" : "Codes for the assessment of whether the entity caused the event.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1254"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-adverse-event-causality-assess.html" : "AdverseEventCausalityAssessment"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/adverse-event-causality-method",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "AdverseEventCausalityMethod",
+      "title" : "AdverseEventCausalityMethod",
+      "description" : "TODO.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1255"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-adverse-event-causality-method.html" : "AdverseEventCausalityMethod"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/adverse-event-outcome",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdverseEventOutcome",
+      "title" : "AdverseEventOutcome",
+      "description" : "TODO (and should this be required?).",
+      "oids" : ["2.16.840.1.113883.4.642.4.1252"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-adverse-event-outcome.html" : "AdverseEventOutcome"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/adverse-event-seriousness",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "AdverseEventSeriousness",
+      "title" : "AdverseEventSeriousness",
+      "description" : "Overall seriousness of this event for the patient.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1253"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-adverse-event-seriousness.html" : "AdverseEventSeriousness"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/adverse-event-severity",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "AdverseEventSeverity",
+      "title" : "AdverseEventSeverity",
+      "description" : "The severity of the adverse event itself, in direct relation to the subject.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1256"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-adverse-event-severity.html" : "AdverseEventSeverity"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/immunization-funding-source",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ImmunizationFundingSource",
+      "title" : "Immunization Funding Source",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the source of the vaccine administered. This value set is provided as a suggestive example.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1100"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-immunization-funding-source.html" : "Immunization Funding Source"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/immunization-origin",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ImmunizationOriginCodes",
+      "title" : "Immunization Origin Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the source of the data when the report of the immunization event is not based on information from the person, entity or organization who administered the vaccine. This value set is provided as a suggestive example.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1101"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-immunization-origin.html" : "Immunization Origin Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/immunization-program-eligibility",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ImmunizationProgramEligibility",
+      "title" : "Immunization Program Eligibility",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the patient's eligibility for a vaccination program. This value set is provided as a suggestive example.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1099"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-immunization-program-eligibility.html" : "Immunization Program Eligibility"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/immunization-subpotent-reason",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ImmunizationSubpotentReason",
+      "title" : "Immunization Subpotent Reason",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the reason why a dose is considered to be subpotent. This value set is provided as a suggestive example.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1098"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-immunization-subpotent-reason.html" : "Immunization Subpotent Reason"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "ContactRole2",
+      "title" : "contactRole2",
+      "description" : "Code system of concepts which specify a relationship role that the next of kin/associated parties plays with regard to the patient. Also used in referrals, for example, it may be necessary to identify the contact representative at the clinic that sent a referral. Used in HL7 Version 2 messaging in the NK1 and CTD segments after 2.5, when it replace 2.16.840.1.113883.18.57.",
+      "oids" : ["2.16.840.1.113883.18.58"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship "
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "version" : "4.0.0",
+      "status" : "active",
+      "name" : "IdentifierType",
+      "title" : "identifierType",
+      "description" : "HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.",
+      "oids" : ["2.16.840.1.113883.18.108"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0443",
+      "version" : "2.3.0",
+      "status" : "active",
+      "name" : "ProviderRole",
+      "title" : "providerRole",
+      "description" : "Code system of concepts specifying the functional involvement with the activity being transmitted (e.g., Case Manager, Evaluator, Transcriber, Nurse Care Practitioner, Midwife, Physician Assistant, etc.).  Used in HL7 Version 2.x messaging in the ROL segment.",
+      "oids" : ["2.16.840.1.113883.18.283"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-immunization-function.html" : "Immunization Function Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "ActReason",
+      "title" : "ActReason",
+      "description" : "A set of codes specifying the motivation, cause, or rationale of an Act, when such rationale is not reasonably represented as an ActRelationship of type \"has reason\" linking to another Act.\r\n\r\n*Examples:* Example reasons that might qualify for being coded in this field might be: \"routine requirement\", \"infectious disease reporting requirement\", \"on patient request\", \"required by law\".",
+      "oids" : ["2.16.840.1.113883.5.8"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActSite",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActSite",
+      "title" : "ActSite",
+      "description" : "An anatomical location on an organism which can be the focus of an act.",
+      "oids" : ["2.16.840.1.113883.5.1052"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-immunization-site.html" : "Codes for Immunization Site of Administration"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "MaritalStatus",
+      "title" : "MaritalStatus",
+      "description" : "\\* \\* \\* No description supplied \\* \\* \\*\r\n\r\n*Open Issue:* The specific meanings of these codes can vary somewhat by jurisdiction and implementation so caution should be used when determining equivalency.\r\n\r\n*Open Issue:* fixing and completion of the hierarchy and proper good definitions of all the concepts is badly needed.",
+      "oids" : ["2.16.840.1.113883.5.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "NullFlavor",
+      "title" : "NullFlavor",
+      "description" : "A collection of codes specifying why a valid value is not present.",
+      "oids" : ["2.16.840.1.113883.5.1008"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "RouteOfAdministration",
+      "title" : "RouteOfAdministration",
+      "description" : "The path the administered medication takes to get into the body or into contact with the body.",
+      "oids" : ["2.16.840.1.113883.5.112"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-immunization-route.html" : "Immunization Route Codes"
+    },
+    {
+      "url" : "urn:ietf:bcp:47",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Ietf3066",
+      "title" : "Tags for the Identification of Languages",
+      "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+      "oids" : ["2.16.840.1.113883.6.121"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages",
+      "http://hl7.org/fhir/us/core/STU5.0.1/ValueSet-simple-language.html" : "Language codes with language and optionally a region modifier"
+    }
+  ]
+}

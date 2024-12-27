@@ -1,0 +1,210 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://va.gov/fhir/Bundle/example1> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example1"] ; # 
+  fhir:type [ fhir:v "transaction"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "urn:uuid:54e5c032-cd98-11ed-b771-06f111b3c1f2"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:54e5c032-cd98-11ed-b771-06f111b3c1f2> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "Patient"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:54e68c10-cd98-11ed-b771-06f111b3c1f2"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:54e68c10-cd98-11ed-b771-06f111b3c1f2> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "Immunization"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:54e6f146-cd98-11ed-b771-06f111b3c1f2"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:54e6f146-cd98-11ed-b771-06f111b3c1f2> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "AdverseEvent"^^xsd:anyURI ]
+     ]
+  ] ) . # 
+
+<urn:uuid:54e5c032-cd98-11ed-b771-06f111b3c1f2> a fhir:Patient ;
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_null\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient </b></p><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Refer to VA ADERS Report ID (1999926)(official) Male, DoB: 1999-01-01 ( MRN: 9999999999V999215 (use: official, ))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Ids:</td><td colspan=\"3\"><ul><li>MPIID/9999999999V999215 (use: official, )</li><li>VA ADERS Report ID/1999926 (use: secondary, )</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Extension patient-ageAtVaccination\"><a href=\"StructureDefinition-patient-ageAtVaccination.html\"/></td><td colspan=\"3\">99 Years 99 Months</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://va.gov/fhir/StructureDefinition/patient-ageAtVaccination"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "99 Years 99 Months" ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:text [ fhir:v "MPIID" ]
+     ] ;
+     fhir:value [ fhir:v "9999999999V999215" ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/v2/0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MR" ]
+       ] ) ;
+       fhir:text [ fhir:v "MRN" ]
+     ] ;
+     fhir:system [ fhir:v "http://va.gov/fhir/identifiers/USVHA/2-.001"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "9999999999V999215" ]
+  ] [
+     fhir:use [ fhir:v "secondary" ] ;
+     fhir:type [
+       fhir:text [ fhir:v "VA ADERS Report ID" ]
+     ] ;
+     fhir:system [ fhir:v "http://va.gov/fhir/identifiers/USVHA/VAADERS/reportID"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1999926" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:text [ fhir:v "Refer to VA ADERS Report ID (1999926)" ] ;
+     fhir:given ( [ fhir:v "Refer to VA ADERS Report ID (1999926)" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1999-01-01"^^xsd:date] ; # 
+  fhir:deceased [ fhir:v "false"^^xsd:boolean] . # 
+
+<urn:uuid:54e68c10-cd98-11ed-b771-06f111b3c1f2> a fhir:Immunization ;
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_null\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization </b></p><p><b>com/fhir/extn/sda3/lib/administration-administration-status</b>: <span title=\"Codes:\">4</span></p><p><b>com/fhir/extn/sda3/lib/administration-lot-number</b>: FM0698</p><p><b>com/fhir/extn/sda3/lib/administration-manufacturer-name</b>: Pfizer, Inc</p><p><b>identifier</b>: ExternalId/1999926-1 (use: official, ), FillerId/?ngen-9? (use: official, ), PlacerId/?ngen-9? (use: official, ), VA ADERS Report ID/1999926 (use: official, )</p><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:\">COVID-19 VACCINE (PFIZER)</span></p><p><b>patient</b>: <a href=\"Patient/1999926\">Patient/1999926</a></p><p><b>occurrence</b>: 2022-04-13 00:00:00-0500</p><p><b>manufacturer</b>: Identifier: Pfizer, Inc</p><p><b>lotNumber</b>: FM0698</p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>4</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://intersystems.com/fhir/extn/sda3/lib/administration-administration-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:code [ fhir:v "4" ] ;
+         fhir:display [ fhir:v "4" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://intersystems.com/fhir/extn/sda3/lib/administration-lot-number"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "FM0698" ]
+  ] [
+     fhir:url [ fhir:v "http://intersystems.com/fhir/extn/sda3/lib/administration-manufacturer-name"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Pfizer, Inc" ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:text [ fhir:v "ExternalId" ]
+     ] ;
+     fhir:value [ fhir:v "1999926-1" ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "FILL" ] ;
+         fhir:display [ fhir:v "Filler Identifier" ]
+       ] ) ;
+       fhir:text [ fhir:v "FillerId" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PLAC" ] ;
+         fhir:display [ fhir:v "Placer Identifier" ]
+       ] ) ;
+       fhir:text [ fhir:v "PlacerId" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:text [ fhir:v "VA ADERS Report ID" ]
+     ] ;
+     fhir:system [ fhir:v "http://va.gov/fhir/identifiers/USVHA/VAADERS/reportID"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1999926" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       fhir:display [ fhir:v "COVID-19 VACCINE (PFIZER)" ]
+     ] ) ;
+     fhir:text [ fhir:v "COVID-19 VACCINE (PFIZER)" ]
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://va.gov/fhir/Patient/1999926> ;
+     fhir:reference [ fhir:v "Patient/1999926" ]
+  ] ; # 
+  fhir:occurrence [ fhir:v "2022-04-13T00:00:00-05:00"^^xsd:dateTime] ; # 
+  fhir:manufacturer [
+     fhir:type [ fhir:v "Organization"^^xsd:anyURI ] ;
+     fhir:identifier [
+       fhir:value [ fhir:v "Pfizer, Inc" ]
+     ]
+  ] ; # 
+  fhir:lotNumber [ fhir:v "FM0698"] ; # 
+  fhir:protocolApplied ( [
+     fhir:doseNumber [ fhir:v "4" ]
+  ] ) . # 
+
+<urn:uuid:54e6f146-cd98-11ed-b771-06f111b3c1f2> a fhir:AdverseEvent ;
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AdverseEvent_null\"> </a><p class=\"res-header-id\"><b>Generated Narrative: AdverseEvent </b></p><p><b>identifier</b>: VA ADERS Report ID/1999926 (use: official, )</p><p><b>actuality</b>: Adverse Event</p><p><b>event</b>: <span title=\"Codes:{https://www.meddra.org 10054112}, {https://www.meddra.org 10067923}, {https://www.meddra.org 10084355}\">10054112:HOSPITALISATION^10067923:VACCINE BREAKTHROUGH INFECTION^10084355:COVID-19 VIRUS TEST POSITIVE^  . . Other Relevant HX:  hospitalization- incidental COVID positive during admission upon testing for placement</span></p><p><b>subject</b>: <a href=\"Patient/1999926\">Patient/1999926</a></p><p><b>date</b>: 2023-01-25 00:00:00-0600</p><p><b>outcome</b>: <span title=\"Codes:{https://www.vaers.hhs.gov/data/datasets.html/Patientoutcomes hospitalization}, {http://hl7.org/fhir/ValueSet/adverse-event-outcome unknown}\">Hospitalization</span></p><h3>SuspectEntities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Instance</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Immunization/1999926\">Immunization/1999926</a></td></tr></table></div>"
+  ] ; # 
+  fhir:identifier [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:text [ fhir:v "VA ADERS Report ID" ]
+     ] ;
+     fhir:system [ fhir:v "http://va.gov/fhir/identifiers/USVHA/VAADERS/reportID"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1999926" ]
+  ] ; # 
+  fhir:actuality [ fhir:v "actual"] ; # 
+  fhir:event [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.meddra.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10054112" ] ;
+       fhir:display [ fhir:v "HOSPITALISATION" ]
+     ] [
+       fhir:system [ fhir:v "https://www.meddra.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10067923" ] ;
+       fhir:display [ fhir:v "VACCINE BREAKTHROUGH INFECTION" ]
+     ] [
+       fhir:system [ fhir:v "https://www.meddra.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10084355" ] ;
+       fhir:display [ fhir:v "COVID-19 VIRUS TEST POSITIVE" ]
+     ] ) ;
+     fhir:text [ fhir:v "10054112:HOSPITALISATION^10067923:VACCINE BREAKTHROUGH INFECTION^10084355:COVID-19 VIRUS TEST POSITIVE^  . . Other Relevant HX:  hospitalization- incidental COVID positive during admission upon testing for placement" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://va.gov/fhir/Patient/1999926> ;
+     fhir:reference [ fhir:v "Patient/1999926" ]
+  ] ; # 
+  fhir:date [ fhir:v "2023-01-25T00:00:00-06:00"^^xsd:dateTime] ; # 
+  fhir:outcome [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.vaers.hhs.gov/data/datasets.html/Patientoutcomes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "hospitalization" ] ;
+       fhir:display [ fhir:v "Hospitalization" ]
+     ] [
+       fhir:system [ fhir:v "http://hl7.org/fhir/ValueSet/adverse-event-outcome"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "unknown" ] ;
+       fhir:display [ fhir:v "Unknown" ]
+     ] )
+  ] ; # 
+  fhir:suspectEntity ( [
+     fhir:instance [
+       fhir:link <http://va.gov/fhir/Immunization/1999926> ;
+       fhir:reference [ fhir:v "Immunization/1999926" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

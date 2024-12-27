@@ -1,0 +1,734 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.6",
+      "version" : "20210630",
+      "status" : "active",
+      "name" : "CVX Vaccines Administered Vaccine Set",
+      "title" : null,
+      "description" : null,
+      "systems" : ["http://hl7.org/fhir/sid/cvx"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSImmunizationpvac3.html" : "VAERS Immunization[pvac3]",
+      "StructureDefinition-VAERSImmunizationvac2.html" : "VAERS Immunization[vac2]",
+      "StructureDefinition-VAERSImmunizationvac3.html" : "VAERS Immunization[vac3]",
+      "StructureDefinition-VAERSImmunizationpvac4.html" : "VAERS Immunization[pvac4]",
+      "StructureDefinition-VAERSImmunizationpvac1.html" : "VAERS Immunization[pvac1]",
+      "StructureDefinition-VAERSImmunizationvac4.html" : "VAERS Immunization[vac4]",
+      "StructureDefinition-VAERSabstract.html" : "VAERS: abstract",
+      "StructureDefinition-VAERSImmunizationpvac2.html" : "VAERS Immunization[pvac2]",
+      "StructureDefinition-VAERSImmunizationvac1.html" : "VAERS Immunization[vac1]"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/address-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressType",
+      "title" : "AddressType",
+      "description" : "The type of an address (physical / postal).",
+      "systems" : ["http://hl7.org/fhir/address-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.69"],
+      "sources" : ["2.16.840.1.113883.4.642.3.69"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSPatient.html" : "VAERS Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/address-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressUse",
+      "title" : "AddressUse",
+      "description" : "The use of an address.",
+      "systems" : ["http://hl7.org/fhir/address-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.67"],
+      "sources" : ["2.16.840.1.113883.4.642.3.67"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSPatient.html" : "VAERS Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSPatient.html" : "VAERS Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/adverse-event-actuality",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdverseEventActuality",
+      "title" : "AdverseEventActuality",
+      "description" : "Overall nature of the adverse event, e.g. real or potential.",
+      "systems" : ["http://hl7.org/fhir/adverse-event-actuality"],
+      "oids" : ["2.16.840.1.113883.4.642.3.831"],
+      "sources" : ["2.16.840.1.113883.4.642.3.831"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSAdverseEvent.html" : "VAERS AdverseEvent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/adverse-event-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdverseEventCategory",
+      "title" : "AdverseEventCategory",
+      "description" : "Overall categorization of the event, e.g. product-related or situational.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/adverse-event-category"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.833"],
+      "sources" : ["2.16.840.1.113883.4.642.3.833"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSAdverseEvent.html" : "VAERS AdverseEvent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/adverse-event-causality-assess",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdverseEventCausalityAssessment",
+      "title" : "AdverseEventCausalityAssessment",
+      "description" : "Codes for the assessment of whether the entity caused the event.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.840"],
+      "sources" : ["2.16.840.1.113883.4.642.3.840"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSAdverseEvent.html" : "VAERS AdverseEvent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/adverse-event-causality-method",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdverseEventCausalityMethod",
+      "title" : "AdverseEventCausalityMethod",
+      "description" : "TODO.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/adverse-event-causality-method"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.842"],
+      "sources" : ["2.16.840.1.113883.4.642.3.842"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSAdverseEvent.html" : "VAERS AdverseEvent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/adverse-event-outcome",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdverseEventOutcome",
+      "title" : "AdverseEventOutcome",
+      "description" : "TODO (and should this be required?).",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/adverse-event-outcome"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.836"],
+      "sources" : ["2.16.840.1.113883.4.642.3.836"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSAdverseEvent.html" : "VAERS AdverseEvent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/adverse-event-seriousness",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdverseEventSeriousness",
+      "title" : "AdverseEventSeriousness",
+      "description" : "Overall seriousness of this event for the patient.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/adverse-event-seriousness"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.838"],
+      "sources" : ["2.16.840.1.113883.4.642.3.838"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSAdverseEvent.html" : "VAERS AdverseEvent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/adverse-event-severity",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdverseEventSeverity",
+      "title" : "AdverseEventSeverity",
+      "description" : "The severity of the adverse event itself, in direct relation to the subject.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/adverse-event-severity"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.844"],
+      "sources" : ["2.16.840.1.113883.4.642.3.844"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSAdverseEvent.html" : "VAERS AdverseEvent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/adverse-event-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTClinicalFindings",
+      "title" : "SNOMED CT Clinical Findings",
+      "description" : "This value set includes all SNOMED CT Clinical Findings.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.835"],
+      "sources" : ["2.16.840.1.113883.4.642.3.835"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSAdverseEvent.html" : "VAERS AdverseEvent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/bundle-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "BundleType",
+      "title" : "BundleType",
+      "description" : "Indicates the purpose of a bundle - how it is intended to be used.",
+      "systems" : ["http://hl7.org/fhir/bundle-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.620"],
+      "sources" : ["2.16.840.1.113883.4.642.3.620"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSBundle.html" : "VAERS Bundle"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointSystem",
+      "title" : "ContactPointSystem",
+      "description" : "Telecommunications form for contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-system"],
+      "oids" : ["2.16.840.1.113883.4.642.3.71"],
+      "sources" : ["2.16.840.1.113883.4.642.3.71"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSPatient.html" : "VAERS Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointUse",
+      "title" : "ContactPointUse",
+      "description" : "Use of contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.73"],
+      "sources" : ["2.16.840.1.113883.4.642.3.73"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSPatient.html" : "VAERS Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/http-verb",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "HTTPVerb",
+      "title" : "HTTPVerb",
+      "description" : "HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.",
+      "systems" : ["http://hl7.org/fhir/http-verb"],
+      "oids" : ["2.16.840.1.113883.4.642.3.624"],
+      "sources" : ["2.16.840.1.113883.4.642.3.624"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSBundle.html" : "VAERS Bundle"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Identifier Type Codes",
+      "title" : "IdentifierType",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSPatient.html" : "VAERS Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSPatient.html" : "VAERS Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-function",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationFunctionCodes",
+      "title" : "Immunization Function Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the function a practitioner or organization may play in the immunization event. This value set is provided as a suggestive example.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0443"],
+      "oids" : ["2.16.840.1.113883.4.642.3.995"],
+      "sources" : ["2.16.840.1.113883.4.642.3.995"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSImmunizationpvac3.html" : "VAERS Immunization[pvac3]",
+      "StructureDefinition-VAERSImmunizationvac2.html" : "VAERS Immunization[vac2]",
+      "StructureDefinition-VAERSImmunizationvac3.html" : "VAERS Immunization[vac3]",
+      "StructureDefinition-VAERSImmunizationpvac4.html" : "VAERS Immunization[pvac4]",
+      "StructureDefinition-VAERSImmunizationpvac1.html" : "VAERS Immunization[pvac1]",
+      "StructureDefinition-VAERSImmunizationvac4.html" : "VAERS Immunization[vac4]",
+      "StructureDefinition-VAERSabstract.html" : "VAERS: abstract",
+      "StructureDefinition-VAERSImmunizationpvac2.html" : "VAERS Immunization[pvac2]",
+      "StructureDefinition-VAERSImmunizationvac1.html" : "VAERS Immunization[vac1]"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-funding-source",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationFundingSource",
+      "title" : "Immunization Funding Source",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the source of the vaccine administered. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/immunization-funding-source"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.293"],
+      "sources" : ["2.16.840.1.113883.4.642.3.293"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSImmunizationpvac3.html" : "VAERS Immunization[pvac3]",
+      "StructureDefinition-VAERSImmunizationvac2.html" : "VAERS Immunization[vac2]",
+      "StructureDefinition-VAERSImmunizationvac3.html" : "VAERS Immunization[vac3]",
+      "StructureDefinition-VAERSImmunizationpvac4.html" : "VAERS Immunization[pvac4]",
+      "StructureDefinition-VAERSImmunizationpvac1.html" : "VAERS Immunization[pvac1]",
+      "StructureDefinition-VAERSImmunizationvac4.html" : "VAERS Immunization[vac4]",
+      "StructureDefinition-VAERSabstract.html" : "VAERS: abstract",
+      "StructureDefinition-VAERSImmunizationpvac2.html" : "VAERS Immunization[pvac2]",
+      "StructureDefinition-VAERSImmunizationvac1.html" : "VAERS Immunization[vac1]"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-origin",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationOriginCodes",
+      "title" : "Immunization Origin Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the source of the data when the report of the immunization event is not based on information from the person, entity or organization who administered the vaccine. This value set is provided as a suggestive example.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/immunization-origin"],
+      "oids" : ["2.16.840.1.113883.4.642.3.296"],
+      "sources" : ["2.16.840.1.113883.4.642.3.296"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSImmunizationpvac3.html" : "VAERS Immunization[pvac3]",
+      "StructureDefinition-VAERSImmunizationvac2.html" : "VAERS Immunization[vac2]",
+      "StructureDefinition-VAERSImmunizationvac3.html" : "VAERS Immunization[vac3]",
+      "StructureDefinition-VAERSImmunizationpvac4.html" : "VAERS Immunization[pvac4]",
+      "StructureDefinition-VAERSImmunizationpvac1.html" : "VAERS Immunization[pvac1]",
+      "StructureDefinition-VAERSImmunizationvac4.html" : "VAERS Immunization[vac4]",
+      "StructureDefinition-VAERSabstract.html" : "VAERS: abstract",
+      "StructureDefinition-VAERSImmunizationpvac2.html" : "VAERS Immunization[pvac2]",
+      "StructureDefinition-VAERSImmunizationvac1.html" : "VAERS Immunization[vac1]"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-program-eligibility",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationProgramEligibility",
+      "title" : "Immunization Program Eligibility",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the patient's eligibility for a vaccination program. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/immunization-program-eligibility"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.291"],
+      "sources" : ["2.16.840.1.113883.4.642.3.291"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSImmunizationpvac3.html" : "VAERS Immunization[pvac3]",
+      "StructureDefinition-VAERSImmunizationvac2.html" : "VAERS Immunization[vac2]",
+      "StructureDefinition-VAERSImmunizationvac3.html" : "VAERS Immunization[vac3]",
+      "StructureDefinition-VAERSImmunizationpvac4.html" : "VAERS Immunization[pvac4]",
+      "StructureDefinition-VAERSImmunizationpvac1.html" : "VAERS Immunization[pvac1]",
+      "StructureDefinition-VAERSImmunizationvac4.html" : "VAERS Immunization[vac4]",
+      "StructureDefinition-VAERSabstract.html" : "VAERS: abstract",
+      "StructureDefinition-VAERSImmunizationpvac2.html" : "VAERS Immunization[pvac2]",
+      "StructureDefinition-VAERSImmunizationvac1.html" : "VAERS Immunization[vac1]"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationReasonCodes",
+      "title" : "Immunization Reason Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the reason why a dose of vaccine was administered. This value set is provided as a suggestive example.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.290"],
+      "sources" : ["2.16.840.1.113883.4.642.3.290"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSImmunizationpvac3.html" : "VAERS Immunization[pvac3]",
+      "StructureDefinition-VAERSImmunizationvac2.html" : "VAERS Immunization[vac2]",
+      "StructureDefinition-VAERSImmunizationvac3.html" : "VAERS Immunization[vac3]",
+      "StructureDefinition-VAERSImmunizationpvac4.html" : "VAERS Immunization[pvac4]",
+      "StructureDefinition-VAERSImmunizationpvac1.html" : "VAERS Immunization[pvac1]",
+      "StructureDefinition-VAERSImmunizationvac4.html" : "VAERS Immunization[vac4]",
+      "StructureDefinition-VAERSabstract.html" : "VAERS: abstract",
+      "StructureDefinition-VAERSImmunizationpvac2.html" : "VAERS Immunization[pvac2]",
+      "StructureDefinition-VAERSImmunizationvac1.html" : "VAERS Immunization[vac1]"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-route",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationRouteCodes",
+      "title" : "Immunization Route Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the administrative routes used during vaccination. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.289"],
+      "sources" : ["2.16.840.1.113883.4.642.3.289"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSImmunizationpvac3.html" : "VAERS Immunization[pvac3]",
+      "StructureDefinition-VAERSImmunizationvac2.html" : "VAERS Immunization[vac2]",
+      "StructureDefinition-VAERSImmunizationvac3.html" : "VAERS Immunization[vac3]",
+      "StructureDefinition-VAERSImmunizationpvac4.html" : "VAERS Immunization[pvac4]",
+      "StructureDefinition-VAERSImmunizationpvac1.html" : "VAERS Immunization[pvac1]",
+      "StructureDefinition-VAERSImmunizationvac4.html" : "VAERS Immunization[vac4]",
+      "StructureDefinition-VAERSabstract.html" : "VAERS: abstract",
+      "StructureDefinition-VAERSImmunizationpvac2.html" : "VAERS Immunization[pvac2]",
+      "StructureDefinition-VAERSImmunizationvac1.html" : "VAERS Immunization[vac1]"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CodesForImmunizationSiteOfAdministration",
+      "title" : "Codes for Immunization Site of Administration",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the body site where the vaccination occurred. This value set is provided as a suggestive example.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActSite"],
+      "oids" : ["2.16.840.1.113883.4.642.3.288"],
+      "sources" : ["2.16.840.1.113883.4.642.3.288"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSImmunizationpvac3.html" : "VAERS Immunization[pvac3]",
+      "StructureDefinition-VAERSImmunizationvac2.html" : "VAERS Immunization[vac2]",
+      "StructureDefinition-VAERSImmunizationvac3.html" : "VAERS Immunization[vac3]",
+      "StructureDefinition-VAERSImmunizationpvac4.html" : "VAERS Immunization[pvac4]",
+      "StructureDefinition-VAERSImmunizationpvac1.html" : "VAERS Immunization[pvac1]",
+      "StructureDefinition-VAERSImmunizationvac4.html" : "VAERS Immunization[vac4]",
+      "StructureDefinition-VAERSabstract.html" : "VAERS: abstract",
+      "StructureDefinition-VAERSImmunizationpvac2.html" : "VAERS Immunization[pvac2]",
+      "StructureDefinition-VAERSImmunizationvac1.html" : "VAERS Immunization[vac1]"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationStatusCodes",
+      "title" : "Immunization Status Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the current status of the administered dose of vaccine.",
+      "systems" : ["http://hl7.org/fhir/event-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.295"],
+      "sources" : ["2.16.840.1.113883.4.642.3.295"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSImmunizationpvac3.html" : "VAERS Immunization[pvac3]",
+      "StructureDefinition-VAERSImmunizationvac2.html" : "VAERS Immunization[vac2]",
+      "StructureDefinition-VAERSImmunizationvac3.html" : "VAERS Immunization[vac3]",
+      "StructureDefinition-VAERSImmunizationpvac4.html" : "VAERS Immunization[pvac4]",
+      "StructureDefinition-VAERSImmunizationpvac1.html" : "VAERS Immunization[pvac1]",
+      "StructureDefinition-VAERSImmunizationvac4.html" : "VAERS Immunization[vac4]",
+      "StructureDefinition-VAERSabstract.html" : "VAERS: abstract",
+      "StructureDefinition-VAERSImmunizationpvac2.html" : "VAERS Immunization[pvac2]",
+      "StructureDefinition-VAERSImmunizationvac1.html" : "VAERS Immunization[vac1]"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-status-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationStatusReasonCodes",
+      "title" : "Immunization Status Reason Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the reason why a dose of vaccine was not administered. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.992"],
+      "sources" : ["2.16.840.1.113883.4.642.3.992"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSImmunizationpvac3.html" : "VAERS Immunization[pvac3]",
+      "StructureDefinition-VAERSImmunizationvac2.html" : "VAERS Immunization[vac2]",
+      "StructureDefinition-VAERSImmunizationvac3.html" : "VAERS Immunization[vac3]",
+      "StructureDefinition-VAERSImmunizationpvac4.html" : "VAERS Immunization[pvac4]",
+      "StructureDefinition-VAERSImmunizationpvac1.html" : "VAERS Immunization[pvac1]",
+      "StructureDefinition-VAERSImmunizationvac4.html" : "VAERS Immunization[vac4]",
+      "StructureDefinition-VAERSabstract.html" : "VAERS: abstract",
+      "StructureDefinition-VAERSImmunizationpvac2.html" : "VAERS Immunization[pvac2]",
+      "StructureDefinition-VAERSImmunizationvac1.html" : "VAERS Immunization[vac1]"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-subpotent-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationSubpotentReason",
+      "title" : "Immunization Subpotent Reason",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the reason why a dose is considered to be subpotent. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/immunization-subpotent-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.993"],
+      "sources" : ["2.16.840.1.113883.4.642.3.993"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSImmunizationpvac3.html" : "VAERS Immunization[pvac3]",
+      "StructureDefinition-VAERSImmunizationvac2.html" : "VAERS Immunization[vac2]",
+      "StructureDefinition-VAERSImmunizationvac3.html" : "VAERS Immunization[vac3]",
+      "StructureDefinition-VAERSImmunizationpvac4.html" : "VAERS Immunization[pvac4]",
+      "StructureDefinition-VAERSImmunizationpvac1.html" : "VAERS Immunization[pvac1]",
+      "StructureDefinition-VAERSImmunizationvac4.html" : "VAERS Immunization[vac4]",
+      "StructureDefinition-VAERSabstract.html" : "VAERS: abstract",
+      "StructureDefinition-VAERSImmunizationpvac2.html" : "VAERS Immunization[pvac2]",
+      "StructureDefinition-VAERSImmunizationvac1.html" : "VAERS Immunization[vac1]"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-target-disease",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationTargetDiseaseCodes",
+      "title" : "Immunization Target Disease Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the disease that the dose is being administered against. This value set is provided as a suggestive example and includes the SNOMED CT concepts from the 64572001 (Disease) hierarchy.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1047"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1047"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSImmunizationpvac3.html" : "VAERS Immunization[pvac3]",
+      "StructureDefinition-VAERSImmunizationvac2.html" : "VAERS Immunization[vac2]",
+      "StructureDefinition-VAERSImmunizationvac3.html" : "VAERS Immunization[vac3]",
+      "StructureDefinition-VAERSImmunizationpvac4.html" : "VAERS Immunization[pvac4]",
+      "StructureDefinition-VAERSImmunizationpvac1.html" : "VAERS Immunization[pvac1]",
+      "StructureDefinition-VAERSImmunizationvac4.html" : "VAERS Immunization[vac4]",
+      "StructureDefinition-VAERSabstract.html" : "VAERS: abstract",
+      "StructureDefinition-VAERSImmunizationpvac2.html" : "VAERS Immunization[pvac2]",
+      "StructureDefinition-VAERSImmunizationvac1.html" : "VAERS Immunization[vac1]"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSBundle.html" : "VAERS Bundle",
+      "StructureDefinition-VAERSImmunizationpvac3.html" : "VAERS Immunization[pvac3]",
+      "StructureDefinition-VAERSImmunizationvac2.html" : "VAERS Immunization[vac2]",
+      "StructureDefinition-VAERSImmunizationvac3.html" : "VAERS Immunization[vac3]",
+      "StructureDefinition-VAERSImmunizationpvac4.html" : "VAERS Immunization[pvac4]",
+      "StructureDefinition-VAERSPatient.html" : "VAERS Patient",
+      "StructureDefinition-VAERSImmunizationpvac1.html" : "VAERS Immunization[pvac1]",
+      "StructureDefinition-VAERSImmunizationvac4.html" : "VAERS Immunization[vac4]",
+      "StructureDefinition-VAERSAdverseEvent.html" : "VAERS AdverseEvent",
+      "StructureDefinition-VAERSabstract.html" : "VAERS: abstract",
+      "StructureDefinition-VAERSImmunizationpvac2.html" : "VAERS Immunization[pvac2]",
+      "StructureDefinition-VAERSImmunizationvac1.html" : "VAERS Immunization[vac1]"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "systems" : ["http://hl7.org/fhir/link-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.423"],
+      "sources" : ["2.16.840.1.113883.4.642.3.423"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSPatient.html" : "VAERS Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/marital-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Marital Status Codes",
+      "title" : "MaritalStatus",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.29"],
+      "sources" : ["2.16.840.1.113883.4.642.3.29"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSPatient.html" : "VAERS Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/name-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "NameUse",
+      "title" : "NameUse",
+      "description" : "The use of a human name.",
+      "systems" : ["http://hl7.org/fhir/name-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.65"],
+      "sources" : ["2.16.840.1.113883.4.642.3.65"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSPatient.html" : "VAERS Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PatientContactRelationship",
+      "title" : "Patient Contact Relationship ",
+      "description" : "The nature of the relationship between the patient and the contact person.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1130"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1130"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSPatient.html" : "VAERS Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.27"],
+      "sources" : ["2.16.840.1.113883.4.642.3.27"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSImmunizationpvac3.html" : "VAERS Immunization[pvac3]",
+      "StructureDefinition-VAERSImmunizationvac2.html" : "VAERS Immunization[vac2]",
+      "StructureDefinition-VAERSImmunizationvac3.html" : "VAERS Immunization[vac3]",
+      "StructureDefinition-VAERSImmunizationpvac4.html" : "VAERS Immunization[pvac4]",
+      "StructureDefinition-VAERSImmunizationpvac1.html" : "VAERS Immunization[pvac1]",
+      "StructureDefinition-VAERSImmunizationvac4.html" : "VAERS Immunization[vac4]",
+      "StructureDefinition-VAERSImmunizationpvac2.html" : "VAERS Immunization[pvac2]",
+      "StructureDefinition-VAERSImmunizationvac1.html" : "VAERS Immunization[vac1]"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/search-entry-mode",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "SearchEntryMode",
+      "title" : "SearchEntryMode",
+      "description" : "Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.",
+      "systems" : ["http://hl7.org/fhir/search-entry-mode"],
+      "oids" : ["2.16.840.1.113883.4.642.3.622"],
+      "sources" : ["2.16.840.1.113883.4.642.3.622"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSBundle.html" : "VAERS Bundle"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity",
+      "version" : "5.0.1",
+      "status" : "active",
+      "name" : "DetailedEthnicity",
+      "title" : "Detailed ethnicity",
+      "description" : "The codes for the concepts 'Unknown', 'Asked but no answer', 'other, and the 41 [CDC ethnicity codes](http://www.cdc.gov/phin/resources/vocabulary/index.html) that are grouped under one of the 2 OMB ethnicity category codes.",
+      "systems" : [
+        "urn:oid:2.16.840.1.113883.6.238",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSPatient.html" : "VAERS Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/detailed-race",
+      "version" : "5.0.1",
+      "status" : "active",
+      "name" : "DetailedRace",
+      "title" : "Detailed Race",
+      "description" : "The codes for the concepts 'Unknown', 'Asked but no answer', 'other, and the 900+ [CDC Race codes](http://www.cdc.gov/phin/resources/vocabulary/index.html) that are grouped under one of the 5 OMB race category codes.",
+      "systems" : [
+        "urn:oid:2.16.840.1.113883.6.238",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSPatient.html" : "VAERS Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category",
+      "version" : "5.0.1",
+      "status" : "active",
+      "name" : "OmbEthnicityCategories",
+      "title" : "OMB Ethnicity Categories",
+      "description" : "The codes for the concepts 'Unknown', 'Asked but no answer', and the ethnicity categories - 'Hispanic or Latino' and 'Not Hispanic or Latino' - as defined by the [OMB Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity, Statistical Policy Directive No. 15, as revised, October 30, 1997](https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf).",
+      "systems" : [
+        "urn:oid:2.16.840.1.113883.6.238",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSPatient.html" : "VAERS Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/omb-race-category",
+      "version" : "5.0.1",
+      "status" : "active",
+      "name" : "OmbRaceCategories",
+      "title" : "OMB Race Categories",
+      "description" : "The codes for the concepts 'Unknown', 'Asked but Unknown', 'Other Race'* and\nthe codes for the five race categories - 'American Indian' or 'Alaska Native',\n'Asian', 'Black or African American', 'Native Hawaiian or Other Pacific\nIslander', and 'White' - as defined by the [OMB Standards for Maintaining,\nCollecting, and Presenting Federal Data on Race and Ethnicity, Statistical\nPolicy Directive No. 15, as revised, October 30,\n1997](https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf)\n\n\\* The use of 'Other Race' is discouraged for statistical analysis.",
+      "systems" : [
+        "urn:oid:2.16.840.1.113883.6.238",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.2.575"],
+      "sources" : ["2.16.840.1.113883.4.642.2.575"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSPatient.html" : "VAERS Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/simple-language",
+      "version" : "5.0.1",
+      "status" : "active",
+      "name" : "LanguageCodesWithLanguageAndOptionallyARegionModifier",
+      "title" : "Language codes with language and optionally a region modifier",
+      "description" : "This value set includes codes from [BCP-47](http://tools.ietf.org/html/bcp47). This value set matches the ONC 2015 Edition LanguageCommunication data element value set within C-CDA to use a 2 character language code if one exists,   and a 3 character code if a 2 character code does not exist. It points back to [RFC 5646](https://tools.ietf.org/html/rfc5646), however only the language codes are required, all other elements are optional.",
+      "systems" : ["urn:ietf:bcp:47"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSPatient.html" : "VAERS Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state",
+      "version" : "5.0.1",
+      "status" : "active",
+      "name" : "UspsTwoLetterAlphabeticCodes",
+      "title" : "USPS Two Letter Alphabetic Codes",
+      "description" : "This value set defines two letter USPS alphabetic codes.",
+      "systems" : ["https://www.usps.com/"],
+      "oids" : ["2.16.840.1.113883.4.642.3.40"],
+      "sources" : ["2.16.840.1.113883.4.642.3.40"],
+      "uses" : {
+      },
+      "StructureDefinition-VAERSPatient.html" : "VAERS Patient"
+    }
+  ]
+}

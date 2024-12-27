@@ -1,0 +1,106 @@
+[
+  {
+    "id" : "ADERS",
+    "type" : "CapabilityStatement",
+    "url" : "http://va.gov/fhir/CapabilityStatement/ADERS",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "vaers-ig",
+    "type" : "ImplementationGuide",
+    "url" : "http://va.gov/fhir/ImplementationGuide/vaers-ig",
+    "version" : "0.1.0",
+    "name" : "VAERSMapsIG"
+  },
+  {
+    "id" : "VAERSAdverseEvent",
+    "type" : "StructureDefinition",
+    "url" : "http://va.gov/fhir/StructureDefinition/VAERSAdverseEvent",
+    "version" : "0.1.0",
+    "name" : "VAERSAdverseEvent"
+  },
+  {
+    "id" : "VAERSBundle",
+    "type" : "StructureDefinition",
+    "url" : "http://va.gov/fhir/StructureDefinition/VAERSBundle",
+    "version" : "0.1.0",
+    "name" : "VAERSBundle"
+  },
+  {
+    "id" : "VAERSImmunizationpvac1",
+    "type" : "StructureDefinition",
+    "url" : "http://va.gov/fhir/StructureDefinition/VAERSImmunizationpvac1",
+    "version" : "0.1.0",
+    "name" : "VAERSImmunizationpvac1"
+  },
+  {
+    "id" : "VAERSImmunizationpvac2",
+    "type" : "StructureDefinition",
+    "url" : "http://va.gov/fhir/StructureDefinition/VAERSImmunizationpvac2",
+    "version" : "0.1.0",
+    "name" : "VAERSImmunizationpvac2"
+  },
+  {
+    "id" : "VAERSImmunizationpvac3",
+    "type" : "StructureDefinition",
+    "url" : "http://va.gov/fhir/StructureDefinition/VAERSImmunizationpvac3",
+    "version" : "0.1.0",
+    "name" : "VAERSImmunizationpvac3"
+  },
+  {
+    "id" : "VAERSImmunizationpvac4",
+    "type" : "StructureDefinition",
+    "url" : "http://va.gov/fhir/StructureDefinition/VAERSImmunizationpvac4",
+    "version" : "0.1.0",
+    "name" : "VAERSImmunizationpvac4"
+  },
+  {
+    "id" : "VAERSImmunizationvac1",
+    "type" : "StructureDefinition",
+    "url" : "http://va.gov/fhir/StructureDefinition/VAERSImmunizationvac1",
+    "version" : "0.1.0",
+    "name" : "VAERSImmunizationvac1"
+  },
+  {
+    "id" : "VAERSImmunizationvac2",
+    "type" : "StructureDefinition",
+    "url" : "http://va.gov/fhir/StructureDefinition/VAERSImmunizationvac2",
+    "version" : "0.1.0",
+    "name" : "VAERSImmunizationvac2"
+  },
+  {
+    "id" : "VAERSImmunizationvac3",
+    "type" : "StructureDefinition",
+    "url" : "http://va.gov/fhir/StructureDefinition/VAERSImmunizationvac3",
+    "version" : "0.1.0",
+    "name" : "VAERSImmunizationvac3"
+  },
+  {
+    "id" : "VAERSImmunizationvac4",
+    "type" : "StructureDefinition",
+    "url" : "http://va.gov/fhir/StructureDefinition/VAERSImmunizationvac4",
+    "version" : "0.1.0",
+    "name" : "VAERSImmunizationvac4"
+  },
+  {
+    "id" : "VAERSPatient",
+    "type" : "StructureDefinition",
+    "url" : "http://va.gov/fhir/StructureDefinition/VAERSPatient",
+    "version" : "0.1.0",
+    "name" : "VAERSPatient"
+  },
+  {
+    "id" : "VAERSabstract",
+    "type" : "StructureDefinition",
+    "url" : "http://va.gov/fhir/StructureDefinition/VAERSabstract",
+    "version" : "0.1.0",
+    "name" : "VAERSabstract"
+  },
+  {
+    "id" : "patient-ageAtVaccination",
+    "type" : "StructureDefinition",
+    "url" : "http://va.gov/fhir/StructureDefinition/patient-ageAtVaccination",
+    "version" : "0.1.0",
+    "name" : "PatientAgeAtVaccination"
+  }
+]

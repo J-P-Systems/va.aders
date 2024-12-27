@@ -1,0 +1,17 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-vaers-ig.json	5781	-	0	0	0	0	0	0	5	399	0	0	0	0	0	0	0	0	0	0	117	108	0	0	0	3	0	1
+fsh-generated/resources/CapabilityStatement-ADERS.json	1938	24	0	0	0	0	0	0	0	50	0	0	0	0	0	0	0	0	0	0	52	40	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-VAERSAdverseEvent.json	6396	26	0	0	0	0	0	142	0	123	0	0	0	0	0	0	0	3	0	0	501	2487	0	0	0	14	0	1
+fsh-generated/resources/StructureDefinition-VAERSBundle.json	7404	25	1	0	0	0	0	504	0	128	0	0	2	0	0	0	0	6	0	0	1475	4859	0	0	0	36	1	6
+fsh-generated/resources/StructureDefinition-VAERSImmunizationpvac1.json	5824	24	0	0	0	0	0	93	0	90	0	0	1	0	0	0	0	2	0	0	487	860	0	0	0	12	0	1
+fsh-generated/resources/StructureDefinition-VAERSImmunizationpvac2.json	5672	23	0	0	0	0	0	60	0	51	0	0	0	0	0	0	0	1	0	0	481	760	0	0	0	14	0	0
+fsh-generated/resources/StructureDefinition-VAERSImmunizationpvac3.json	5633	24	0	0	0	0	0	45	0	47	0	0	0	0	0	0	0	1	0	0	465	640	0	0	0	10	0	1
+fsh-generated/resources/StructureDefinition-VAERSImmunizationpvac4.json	5633	25	0	0	0	0	0	44	0	89	0	0	0	0	0	0	0	2	0	0	425	592	0	0	0	14	0	1
+fsh-generated/resources/StructureDefinition-VAERSImmunizationvac1.json	5765	24	0	0	0	0	0	62	0	80	0	0	0	0	0	0	0	1	0	0	554	1218	0	0	0	13	0	1
+fsh-generated/resources/StructureDefinition-VAERSImmunizationvac2.json	5575	23	0	0	0	0	0	46	0	50	0	0	0	0	0	0	0	1	0	0	326	703	0	0	0	11	0	1
+fsh-generated/resources/StructureDefinition-VAERSImmunizationvac3.json	5575	24	0	0	0	0	0	194	0	61	0	0	1	0	0	0	0	2	0	0	336	587	0	0	0	10	1	0
+fsh-generated/resources/StructureDefinition-VAERSImmunizationvac4.json	5575	4	1	0	0	0	0	38	0	47	0	0	0	0	0	0	0	1	0	0	330	619	0	0	0	9	0	1
+fsh-generated/resources/StructureDefinition-VAERSPatient.json	12182	6	0	0	0	0	0	58	0	75	0	0	0	0	0	1	0	2	0	0	634	1095	0	0	0	23	0	2
+fsh-generated/resources/StructureDefinition-VAERSabstract.json	2323	3	0	0	0	0	0	51	0	43	0	0	0	0	0	0	0	1	0	0	260	593	0	0	0	6	0	0
+fsh-generated/resources/StructureDefinition-patient-ageAtVaccination.json	1185	3	0	0	0	0	0	20	0	24	0	0	0	0	0	0	0	0	0	0	49	96	0	0	0	2	0	0
+input/examples/example1.json	5707	10	0	0	0	0	18	0	1	801	0	0	0	0	0	0	0	1	0	0	35	35	0	0	0	0	0	1

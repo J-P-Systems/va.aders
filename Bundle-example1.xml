@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="example1"/>
+  <type value="transaction"/>
+  <entry>
+    <fullUrl value="urn:uuid:54e5c032-cd98-11ed-b771-06f111b3c1f2"/>
+    <resource>
+      <Patient>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_null"> </a><p class="res-header-id"><b>Generated Narrative: Patient </b></p><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Refer to VA ADERS Report ID (1999926)(official) Male, DoB: 1999-01-01 ( MRN: 9999999999V999215 (use: official, ))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td colspan="3">false</td></tr><tr><td style="background-color: #f3f5da" title="Other Ids (see the one above)">Other Ids:</td><td colspan="3"><ul><li>MPIID/9999999999V999215 (use: official, )</li><li>VA ADERS Report ID/1999926 (use: secondary, )</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Extension patient-ageAtVaccination"><a href="StructureDefinition-patient-ageAtVaccination.html"/></td><td colspan="3">99 Years 99 Months</td></tr></table></div>
+        </text>
+        <extension url="http://va.gov/fhir/StructureDefinition/patient-ageAtVaccination">
+          <valueString value="99 Years 99 Months"/>
+        </extension>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="MPIID"/>
+          </type>
+          <value value="9999999999V999215"/>
+        </identifier>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/v2/0203"/>
+              <code value="MR"/>
+            </coding>
+            <text value="MRN"/>
+          </type>
+          <system value="http://va.gov/fhir/identifiers/USVHA/2-.001"/>
+          <value value="9999999999V999215"/>
+        </identifier>
+        <identifier>
+          <use value="secondary"/>
+          <type>
+            <text value="VA ADERS Report ID"/>
+          </type>
+          <system value="http://va.gov/fhir/identifiers/USVHA/VAADERS/reportID"/>
+          <value value="1999926"/>
+        </identifier>
+        <name>
+          <use value="official"/>
+          <text value="Refer to VA ADERS Report ID (1999926)"/>
+          <given value="Refer to VA ADERS Report ID (1999926)"/>
+        </name>
+        <gender value="male"/>
+        <birthDate value="1999-01-01"/>
+        <deceasedBoolean value="false"/>
+      </Patient>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Patient"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:54e68c10-cd98-11ed-b771-06f111b3c1f2"/>
+    <resource>
+      <Immunization>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Immunization_null"> </a><p class="res-header-id"><b>Generated Narrative: Immunization </b></p><p><b>com/fhir/extn/sda3/lib/administration-administration-status</b>: <span title="Codes:">4</span></p><p><b>com/fhir/extn/sda3/lib/administration-lot-number</b>: FM0698</p><p><b>com/fhir/extn/sda3/lib/administration-manufacturer-name</b>: Pfizer, Inc</p><p><b>identifier</b>: ExternalId/1999926-1 (use: official, ), FillerId/?ngen-9? (use: official, ), PlacerId/?ngen-9? (use: official, ), VA ADERS Report ID/1999926 (use: official, )</p><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title="Codes:">COVID-19 VACCINE (PFIZER)</span></p><p><b>patient</b>: <a href="Patient/1999926">Patient/1999926</a></p><p><b>occurrence</b>: 2022-04-13 00:00:00-0500</p><p><b>manufacturer</b>: Identifier: Pfizer, Inc</p><p><b>lotNumber</b>: FM0698</p><h3>ProtocolApplieds</h3><table class="grid"><tr><td style="display: none">-</td><td><b>DoseNumber[x]</b></td></tr><tr><td style="display: none">*</td><td>4</td></tr></table></div>
+        </text>
+        <extension url="http://intersystems.com/fhir/extn/sda3/lib/administration-administration-status">
+          <valueCodeableConcept>
+            <coding>
+              <code value="4"/>
+              <display value="4"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <extension url="http://intersystems.com/fhir/extn/sda3/lib/administration-lot-number">
+          <valueString value="FM0698"/>
+        </extension>
+        <extension url="http://intersystems.com/fhir/extn/sda3/lib/administration-manufacturer-name">
+          <valueString value="Pfizer, Inc"/>
+        </extension>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="ExternalId"/>
+          </type>
+          <value value="1999926-1"/>
+        </identifier>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="FILL"/>
+              <display value="Filler Identifier"/>
+            </coding>
+            <text value="FillerId"/>
+          </type>
+        </identifier>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="PLAC"/>
+              <display value="Placer Identifier"/>
+            </coding>
+            <text value="PlacerId"/>
+          </type>
+        </identifier>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="VA ADERS Report ID"/>
+          </type>
+          <system value="http://va.gov/fhir/identifiers/USVHA/VAADERS/reportID"/>
+          <value value="1999926"/>
+        </identifier>
+        <status value="completed"/>
+        <vaccineCode>
+          <coding>
+            <display value="COVID-19 VACCINE (PFIZER)"/>
+          </coding>
+          <text value="COVID-19 VACCINE (PFIZER)"/>
+        </vaccineCode>
+        <patient>
+          <reference value="Patient/1999926"/>
+        </patient>
+        <occurrenceDateTime value="2022-04-13T00:00:00-05:00"/>
+        <manufacturer>
+          <type value="Organization"/>
+          <identifier>
+            <value value="Pfizer, Inc"/>
+          </identifier>
+        </manufacturer>
+        <lotNumber value="FM0698"/>
+        <protocolApplied>
+          <doseNumberString value="4"/>
+        </protocolApplied>
+      </Immunization>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Immunization"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:54e6f146-cd98-11ed-b771-06f111b3c1f2"/>
+    <resource>
+      <AdverseEvent>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="AdverseEvent_null"> </a><p class="res-header-id"><b>Generated Narrative: AdverseEvent </b></p><p><b>identifier</b>: VA ADERS Report ID/1999926 (use: official, )</p><p><b>actuality</b>: Adverse Event</p><p><b>event</b>: <span title="Codes:{https://www.meddra.org 10054112}, {https://www.meddra.org 10067923}, {https://www.meddra.org 10084355}">10054112:HOSPITALISATION^10067923:VACCINE BREAKTHROUGH INFECTION^10084355:COVID-19 VIRUS TEST POSITIVE^  . . Other Relevant HX:  hospitalization- incidental COVID positive during admission upon testing for placement</span></p><p><b>subject</b>: <a href="Patient/1999926">Patient/1999926</a></p><p><b>date</b>: 2023-01-25 00:00:00-0600</p><p><b>outcome</b>: <span title="Codes:{https://www.vaers.hhs.gov/data/datasets.html/Patientoutcomes hospitalization}, {http://hl7.org/fhir/ValueSet/adverse-event-outcome unknown}">Hospitalization</span></p><h3>SuspectEntities</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Instance</b></td></tr><tr><td style="display: none">*</td><td><a href="Immunization/1999926">Immunization/1999926</a></td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <text value="VA ADERS Report ID"/>
+          </type>
+          <system value="http://va.gov/fhir/identifiers/USVHA/VAADERS/reportID"/>
+          <value value="1999926"/>
+        </identifier>
+        <actuality value="actual"/>
+        <event>
+          <coding>
+            <system value="https://www.meddra.org"/>
+            <code value="10054112"/>
+            <display value="HOSPITALISATION"/>
+          </coding>
+          <coding>
+            <system value="https://www.meddra.org"/>
+            <code value="10067923"/>
+            <display value="VACCINE BREAKTHROUGH INFECTION"/>
+          </coding>
+          <coding>
+            <system value="https://www.meddra.org"/>
+            <code value="10084355"/>
+            <display value="COVID-19 VIRUS TEST POSITIVE"/>
+          </coding>
+          <text value="10054112:HOSPITALISATION^10067923:VACCINE BREAKTHROUGH INFECTION^10084355:COVID-19 VIRUS TEST POSITIVE^  . . Other Relevant HX:  hospitalization- incidental COVID positive during admission upon testing for placement"/>
+        </event>
+        <subject>
+          <reference value="Patient/1999926"/>
+        </subject>
+        <date value="2023-01-25T00:00:00-06:00"/>
+        <outcome>
+          <coding>
+            <system value="https://www.vaers.hhs.gov/data/datasets.html/Patientoutcomes"/>
+            <code value="hospitalization"/>
+            <display value="Hospitalization"/>
+          </coding>
+          <coding>
+            <system value="http://hl7.org/fhir/ValueSet/adverse-event-outcome"/>
+            <code value="unknown"/>
+            <display value="Unknown"/>
+          </coding>
+        </outcome>
+        <suspectEntity>
+          <instance>
+            <reference value="Immunization/1999926"/>
+          </instance>
+        </suspectEntity>
+      </AdverseEvent>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="AdverseEvent"/>
+    </request>
+  </entry>
+</Bundle>
